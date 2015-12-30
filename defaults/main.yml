@@ -1,0 +1,16 @@
+---
+
+_unix_users:
+  groups:
+    - { name: admin, system: yes }
+  users:
+    - name: user.name
+      state: present
+      comment: User Name
+      password:
+      ssh:
+        public_key: ssh-rsa ##INVALID KEY - PLEASE USE REAL PUBLIC KEY
+      shell: /usr/bin/zsh
+      groups:
+        - admin
+
