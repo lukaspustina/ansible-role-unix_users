@@ -29,6 +29,8 @@ Example Playbook
         UNIX_USERS:
           groups:
             - { name: admin, system: yes }
+          sudo:
+            group: admin
           users:
             - name: user.name
               state: present
