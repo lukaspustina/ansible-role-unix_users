@@ -42,7 +42,7 @@ Example Playbook
               groups:
                 - admin
       roles:
-        - { role: unix_users, tags: [ 'unix_users' ], _unix_users: "{{ uNIX_USERS }}" }
+        - { role: unix_users, tags: [ 'unix_users' ], _unix_users: "{{ UNIX_USERS }}" }
 ```
 
 License
